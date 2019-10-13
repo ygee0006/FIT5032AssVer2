@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9f9abbd3d2614489b1d2a37d64aa7b83" Name="Diagram1" ZoomLevel="81" >
+        <EntityTypeShape EntityType="Model1.Customer" Width="1.5" PointX="3.5" PointY="2.625" />
+        <EntityTypeShape EntityType="Model1.Event" Width="1.5" PointX="10" PointY="2.5" />
+        <EntityTypeShape EntityType="Model1.EventRegister" Width="1.5" PointX="6.5" PointY="2.5" />
+        <AssociationConnector Association="Model1.CustomerEventRegister" />
+        <AssociationConnector Association="Model1.EventEventRegister" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

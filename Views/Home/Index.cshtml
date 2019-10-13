@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Event</h1>
+    <p class="lead"></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Event</h2>
+        <p>
+            Find some interesting events
+        </p>
+        <p><a class="btn btn-default" href="https://localhost:44363/Account/Login?ReturnUrl=%2FEvents">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Register for event</h2>
+        <p>Register for it</p>
+        <p><a class="btn btn-default" href="https://localhost:44363/Account/Login?ReturnUrl=%2FEventRegisters">Learn more &raquo;</a></p>
+    </div>
+    @if (User.IsInRole("Admin"))
+    {
+        <div class="col-md-4">
+            <h2>Manage</h2>
+            <p>Manage the customer</p>
+            <p><a class="btn btn-default" href="https://localhost:44363/Customers">Learn more &raquo;</a></p>
+        </div>
+    }
+    </div>
